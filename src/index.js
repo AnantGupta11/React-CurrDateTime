@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+const currDate= new Date().toLocaleDateString();
+const currTime= new Date().toLocaleTimeString();
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+  <>
+  <h1>Hello, My Name is Anant Kumar</h1>
+  <p>Current Date={currDate}</p>
+  <p>{`Current Time=${currTime}`}</p>
+  </>,
   document.getElementById('root')
 );
 
