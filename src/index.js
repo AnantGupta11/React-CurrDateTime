@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Card from './Cards';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-const currDate= new Date().toLocaleDateString();
-const currTime= new Date().toLocaleTimeString();
+// const currDate= new Date().toLocaleDateString();
+// const currTime= new Date().toLocaleTimeString();
 ReactDOM.render(
 
   <>
-  <h1>Hello, My Name is Anant Kumar</h1>
-  <p>Current Date={currDate}</p>
-  <p>{`Current Time=${currTime}`}</p>
+    <Card 
+    imgsrc="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.64yb2vcJcd6ACVPoxzHzqAHaDR%26pid%3DApi&f=1"
+    />    
   </>,
   document.getElementById('root')
 );
