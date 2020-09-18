@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Card from './Cards';
+import Sdata from './Sdata';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -10,8 +11,36 @@ ReactDOM.render(
 
   <>
     <Card 
-    imgsrc="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.64yb2vcJcd6ACVPoxzHzqAHaDR%26pid%3DApi&f=1"
-    />    
+    imgsrc={Sdata[0].imgsrc}
+    category={Sdata[0].category}
+    title={Sdata[0].title}
+    link={Sdata[0].link}
+    />  
+    <Card 
+    imgsrc={Sdata[1].imgsrc}
+    category={Sdata[1].category}
+    title={Sdata[1].title}
+    link={Sdata[1].link}
+    />
+    <Card 
+    imgsrc={Sdata[2].imgsrc}
+    category={Sdata[2].category}
+    title={Sdata[2].title}
+    link={Sdata[2].link}
+    />
+    <Card 
+    imgsrc={Sdata[3].imgsrc}
+    category={Sdata[3].category}
+    title={Sdata[3].title}
+    link={Sdata[3].link}
+    />
+    <Card 
+    imgsrc={Sdata[4].imgsrc}
+    category={Sdata[4].category}
+    title={Sdata[4].title}
+    link={Sdata[4].link}
+    /> 
+
   </>,
   document.getElementById('root')
 );
